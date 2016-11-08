@@ -1,25 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Transition : MonoBehaviour {
-
-	
-   public void Jogar()
+public class Transition : MonoBehaviour
+{   
+    /// <summary>
+    /// Método para fazer troca de cenas
+    /// </summary>
+    /// <param name="cena">Recebe a cena</param>
+    public void trocarDeCema(int cena)
     {
-        Application.LoadLevel(1);
-    }
-   public void Sobre()
-   {
-       Application.LoadLevel(2);
-   }
-   public void Exit()
-   {
-       Application.Quit();
-   }
-    public void Back()
-   {
-       
-           Application.LoadLevel(0);
-       
-   }
+        Application.LoadLevel(cena);
+    }   
 }
